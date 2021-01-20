@@ -12,7 +12,7 @@ const connectDB = async () => {
         });
         console.log('Database is Connect');
     } catch (error) {
-        console.log(error);
+        console.log("Este error es en la conexion a mongoDB, " + error);
         process.exit(1); //Detendrá la app
     }
 }

@@ -1,15 +1,13 @@
-const connectDB = require("./Config/dbConfig");
 const express = require("express");
+const connectDB = require("./Config/dbConfig");
 const cors = require("cors");
 const morgan = require("morgan");
-const conectarDB = require("./Config/dbConfig");
 
 //creamos el servdor;
-const app = express()
-
+const app = express();
 
 //conectamos las base de datos
-conectarDB();
+connectDB();
 
 //Habilitamos express.js para recibir datos en json
 app.use(express.json({extends: true}));
@@ -36,10 +34,7 @@ app.use("/api", PersonlaData);
 app.listen(port,'0.0.0.0' ,() => {
   console.log('################################');
   console.log(`Serve is run in port ${port}`);
-  console.log('################################')
-  console.log(`#### localhost:${port}/api/ ####`)
-  console.log('################################')
-
+  console.log('################################');
 });
 
 
