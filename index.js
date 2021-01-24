@@ -13,7 +13,7 @@ connectDB();
 app.use(express.json({extends: true}));
 
 app.use(cors());
-app.use(morgan("dev"));
+//app.use(morgan("dev"));
 
 //Puerto del servidor
 const port = process.env.PORT || 4001;
