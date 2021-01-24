@@ -1,7 +1,7 @@
 const express = require("express");
 const connectDB = require("./Config/dbConfig");
 const cors = require("cors");
-const morgan = require("morgan");
+//const morgan = require("morgan");
 
 //creamos el servdor;
 const app = express();
