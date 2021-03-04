@@ -2,6 +2,7 @@ const express = require("express");
 const connectDB = require("./Config/dbConfig");
 const cors = require("cors");
 //const morgan = require("morgan");
+//heroku logs -n 200
 
 //creamos el servdor;
 const app = express();
